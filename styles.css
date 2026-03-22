@@ -347,13 +347,11 @@ a:hover { color: var(--gold-light); }
     box-shadow: 0 15px 50px rgba(0,0,0,0.3);
 }
 .trend-image {
-    aspect-ratio: 3/4; background: var(--dark-4); overflow: hidden;
+    aspect-ratio: 4/3; background: var(--dark-4); overflow: hidden;
     position: relative;
 }
-.trend-placeholder-img {
-    width: 100%; height: 100%; display: flex; align-items: center; justify-content: center;
-    font-family: 'Bebas Neue', sans-serif; font-size: 3rem; color: rgba(255,255,255,0.08);
-    background: linear-gradient(135deg, var(--dark-3), var(--dark-4));
+.trend-image img {
+    width: 100%; height: 100%; object-fit: cover; object-position: top center;
 }
 .trend-info { padding: 20px; }
 .trend-info h4 { margin-bottom: 8px; color: var(--white); }
